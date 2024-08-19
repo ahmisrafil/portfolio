@@ -17,7 +17,7 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar flex flex-col md:flex-row gap-4 bg-[#060d5e]  px-10">
+        <div className="navbar flex flex-col md:flex-row gap-4 bg-gradient-to-r from-blue-700 via-purple-600 to-pink-500 px-10">
         <div className="navbar-start">
             <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost text-white lg:hidden">
@@ -27,8 +27,8 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
-            <div className="flex gap-4 h-20">
-                    <img src="/src/assets/Israfil.png" alt="" />
+            <div>
+                    <img src="/src/assets/Israfil.png" alt="" className='h-10' />
             </div>
         </div>
         <div className="navbar-center hidden lg:flex">

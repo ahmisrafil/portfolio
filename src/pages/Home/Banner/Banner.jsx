@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FaGithub, FaLinkedin, FaSquareFacebook, FaSquareGithub } from "react-icons/fa6";
+import { NavLink } from 'react-router-dom';
 import Typed from 'typed.js';
 const Banner = () => {
     // Create reference to store the DOM element containing the animation
@@ -20,19 +21,31 @@ const Banner = () => {
         };
     }, []);
     return (
-        <div className='flex flex-row justify-between mx-40  items-center'>
-            <div>
+        <div className='flex flex-row justify-between ml-10  items-center'>
+            <div data-aos="fade-up-right">
                 <div>
-                    <h3 className='text-6xl font-bold'>Hi There,</h3>
+                    <h3 className='text-xl font-bold'>Hey,</h3>
+                    <h3 className='text-8xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>AHM ISRAFIL</h3>
                 </div>
-                <div className="App text-4xl text-amber-600  flex">
+                <div className="App text-4xl text-amber-600 flex">
                     <h3>I'm -  </h3>
                     <span ref={el} />
                 </div>
+                <div className='flex flex-row gap-4 mt-6'>
+                <div>
+                    <NavLink to='https://www.linkedin.com/in/ahmisrafil' target='_blank'><FaLinkedin /></NavLink>
+                </div>
+                <div>
+                    <NavLink to='https://www.facebook.com/ahm.israfil' target='_blank'><FaSquareFacebook /></NavLink>
+                </div>
+                <div>
+                    <NavLink to='https://www.github.com/ahmisrafil' target='_blank'><FaSquareGithub /></NavLink>
+                </div>
+                </div>
             </div>
             <div>
-               <img src="/src/assets/header_bg.png" alt=""  className= 'absolute h-[500px] w-[450px] border-2 rounded-tl-[150px] rounded-br-[58px] my-4 border-amber-600' />
-               <img src="/src/assets/ahm israfil.png" alt="israfil" className='relative h-[500px]  rounded-tl-[150px] rounded-br-[100px] my-4 border-amber-600' />
+                <img src="/src/assets/header_bg.png" alt="" className='absolute h-[500px] w-[450px] border-2 rounded-tl-[150px] rounded-br-[58px] my-4 border-amber-600' />
+                <img src="/src/assets/ahm israfil.png" alt="israfil" className='relative h-[500px]  rounded-tl-[150px] rounded-br-[100px] my-4 border-amber-600' />
 
             </div>
         </div>

@@ -7,10 +7,19 @@ const Navbar = () => {
             <NavLink to='/'>Home</NavLink>
         </li>
         <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
-            <NavLink to='/'>Add Product</NavLink>
+            <NavLink to='/'>About</NavLink>
         </li>
         <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
-            <NavLink to='/'>My Cart</NavLink>
+            <NavLink to='/'>Resume</NavLink>
+        </li>
+        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+            <NavLink to='/'>Services</NavLink>
+        </li>
+        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+            <NavLink to='/'>Skills</NavLink>
+        </li>
+        <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
+            <NavLink to='/'>Projects</NavLink>
         </li>
        
 
@@ -32,7 +41,7 @@ const Navbar = () => {
             </div>
         </div>
         <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal  px-1">
+            <ul className="flex  px-1">
                 {navLinks}
             </ul>
         </div>

@@ -8,7 +8,7 @@ const Banner = () => {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Md. Israfil Mia.', '  a Web Developer.', 'a Frontend Developer', 'a React Developer'],
+            strings: [' WEB DEVELOPER', 'FRONTEND DEVELOPER', 'UI/UX DESIGNER', 'REACT DEVELOPER'],
             typeSpeed: 150,
             loop: true,
             // fadeOut: true,
@@ -21,14 +21,14 @@ const Banner = () => {
         };
     }, []);
     return (
-        <div className='flex flex-row justify-between ml-10  items-center'>
+        <div className='flex flex-col lg:flex-row  justify-between lg:ml-20  items-center'>
             <div data-aos="fade-up-right">
                 <div>
-                    <h3 className='text-xl font-bold'>Hey,</h3>
-                    <h3 className='text-8xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>AHM ISRAFIL</h3>
+                    <h3 className='text-xl font-bold ml-4'>Hey I'm,</h3>
+                    <h3 className='text-9xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>AHM ISRAFIL</h3>
                 </div>
-                <div className="App text-4xl text-amber-600 flex">
-                    <h3>I'm -  </h3>
+                <div className="App text-4xl font-semibold text-amber-600 flex">
+                    <h3>I'm a-   </h3>
                     <span ref={el} />
                 </div>
                 <div className='flex flex-row gap-4 mt-6'>

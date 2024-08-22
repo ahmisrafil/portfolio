@@ -7,5 +7,6 @@
 @layer base {
     html {
         font-family: 'Rajdhani', sans-serif;
+        background: linear-gradient(to right, #161d21, #7200a3);
     }
   }

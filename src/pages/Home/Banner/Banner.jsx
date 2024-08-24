@@ -65,7 +65,6 @@ const Banner = () => {
         <>
             <div className='flex flex-col lg:flex-row  justify-between lg:ml-20 mb-40 items-center'>
                 <motion.div
-                    className="textContainer"
                     variants={textVariants}
                     initial="initial"
                     animate="animate">
@@ -73,7 +72,7 @@ const Banner = () => {
                         <motion.h3 variants={textVariants} className='text-xl font-bold ml-4'>Hey I'm,</motion.h3>
                         <motion.h3 variants={textVariants} className='lg:text-9xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>AHM ISRAFIL</motion.h3>
                     </div>
-                    <div className="App lg:text-4xl font-semibold text-amber-600 flex">
+                    <div className="App absolute lg:relative lg:text-4xl font-semibold text-amber-600 flex">
                         <motion.h3 variants={textVariants}>I'm a-   </motion.h3>
                         <span ref={el} />
                     </div>
@@ -96,7 +95,7 @@ const Banner = () => {
                 </div>
             </div>
             <motion.div
-                className="absolute text-[40vh] -bottom-32 whitespace-nowrap text-[#ffffff09] w-[50%] font-bold"
+                className="hidden  lg:inline absolute text-[40vh] -bottom-32 whitespace-nowrap text-[#ffffff09] w-[50%] font-bold"
                 variants={sliderVariants}
                 initial="initial"
                 animate="animate"

@@ -2,12 +2,9 @@ import { motion } from 'framer-motion'
 import React from 'react';
 
 
-
 const About = () => {
     return (
         <div className='lg:mx-20 mt-20 flex flex-col lg:flex-row lg:gap-36 justify-center text-white'>
-
-            
             <div>
                 <img src="/src/assets/ahmisrafilcopy.png" className='h-[400px] rounded-full border-2 bg-gradient-to-bl from-[#161d21] via-purple-600 to-pink-400' alt="md_israfil" />
             </div>
@@ -27,11 +24,12 @@ const About = () => {
                         <h3 className='font-semibold'>Email :</h3> <h3>ahmisrafilcse@gmail.com</h3>
                     </div>
                     <div className='flex flex-row gap-[91px] '>
-                        <h3 className='font-semibold'>Phone :</h3> <h3>Khilkhet, Dhaka</h3>
+                        <h3 className='font-semibold'>Phone :</h3> <h3>+88 01770099768</h3>
+                    </div>
+                    <div className='flex flex-row gap-[91px] '>
+                        <h3 className='font-semibold'>Phone :</h3> <h3>+88 01770099768</h3>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

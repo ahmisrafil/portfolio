@@ -26,9 +26,7 @@ const About = () => {
                     <div className='flex flex-row gap-[91px] '>
                         <h3 className='font-semibold'>Phone :</h3> <h3>+88 01770099768</h3>
                     </div>
-                    <div className='flex flex-row gap-[91px] '>
-                        <h3 className='font-semibold'>Phone :</h3> <h3>+88 01770099768</h3>
-                    </div>
+                    
                 </div>
             </div>
         </div>

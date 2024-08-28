@@ -4,7 +4,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='lg:mx-20 mt-20 flex flex-col lg:flex-row lg:gap-36 justify-center text-white'>
+        <div className='lg:mx-20 my-20 flex flex-col lg:flex-row lg:gap-36 justify-center text-white'>
             <div>
                 <img src="/src/assets/ahmisrafilcopy.png" className='h-[400px] rounded-full border-2 bg-gradient-to-bl from-[#161d21] via-purple-600 to-pink-400' alt="md_israfil" />
             </div>

@@ -71,7 +71,7 @@ const About = () => {
                         alt="md_israfil" />
                 </div>
                 <div className='mt-8 lg:mt-0 text-center'>
-                    <motion.h3 variants={textVariants} className='text-3xl sm:text-5xl lg:text-6xl font-semibold bg-gradient-to-l from-gray-400 via-pink-600 to-red-500 bg-clip-text text-transparent mb-8 mx-4'>
+                    <motion.h3 variants={textVariants} className='text-3xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-gray-400 via-pink-600 to-red-500 bg-clip-text text-transparent mb-8 mx-4'>
                         ABOUT ME
                     </motion.h3>
                     <div className='flex flex-col lg:gap-2 mx-4 lg:text-2xl text-base sm:text-lg'>

@@ -49,7 +49,7 @@ const Banner = () => {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: [' WEB DEVELOPER', 'FRONTEND DEVELOPER', 'UI/UX DESIGNER', 'REACT DEVELOPER'],
+            strings: [' TEACHER',' WEB DEVELOPER', 'FRONTEND DEVELOPER', 'UI/UX DESIGNER', 'REACT DEVELOPER'],
             typeSpeed: 150,
             loop: true,
             // fadeOut: true,
@@ -69,31 +69,31 @@ const Banner = () => {
                     initial="initial"
                     animate="animate">
                     <div>
-                        <motion.h3 variants={textVariants} className='text-lg sm:text-xl font-bold ml-2 sm:ml-4'>Hey I'm,</motion.h3>
+                        <motion.h3 variants={textVariants} className='text-lg text-gray-100 sm:text-xl font-bold ml-2 sm:ml-4'>Hey I'm,</motion.h3>
                         <motion.h3
                             variants={textVariants}
                             className='text-4xl sm:text-6xl lg:text-9xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
                             AHM ISRAFIL
                         </motion.h3>
                     </div>
-                    <div className="App absolute lg:relative lg:text-4xl font-semibold text-amber-600 flex">
+                    <div className="App absolute lg:relative lg:text-4xl font-semibold text-amber-600 flex gap-2 items-center">
                         <motion.h3 variants={textVariants} className="text-base sm:text-lg">I'm a-   </motion.h3>
                         <span ref={el} />
                     </div>
                     <div className='flex flex-row gap-4 mt-6'>
                         <motion.div variants={textVariants}>
                             <NavLink to='https://www.linkedin.com/in/ahmisrafil' target='_blank'>
-                                <FaLinkedin size={30} />
+                                <FaLinkedin className='text-white' size={30} />
                             </NavLink>
                         </motion.div>
                         <motion.div variants={textVariants}>
                             <NavLink to='https://www.facebook.com/ahm.israfil' target='_blank'>
-                                <FaSquareFacebook size={30} />
+                                <FaSquareFacebook className='text-white' size={30} />
                             </NavLink>
                         </motion.div>
                         <motion.div variants={textVariants}>
                             <NavLink to='https://www.github.com/ahmisrafil' target='_blank'>
-                                <FaSquareGithub size={30} />
+                                <FaSquareGithub className='text-white' size={30} />
                             </NavLink>
                         </motion.div>
                     </div>

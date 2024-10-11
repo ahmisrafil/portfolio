@@ -66,7 +66,7 @@ const About = () => {
                 <div className='flex justify-center lg:justify-start'>
                     <motion.img
                         variants={textVariants}
-                        src="/src/assets/ahmisrafilcopy.png"
+                        src="https://i.ibb.co.com/NS4Hfw1/ahmisrafilcopy.png"
                         className='h-[200px] sm:h-[300px] lg:h-[400px] rounded-full border-2 bg-gradient-to-bl from-[#161d21] via-purple-600 to-pink-400'
                         alt="md_israfil" />
                 </div>

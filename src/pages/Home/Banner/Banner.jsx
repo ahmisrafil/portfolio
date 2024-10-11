@@ -123,6 +123,18 @@ const Banner = () => {
                 AHM ISRAFIL
             </motion.div>
 
+            <div className="w-[380px] h-[400px] bg-no-repeat bg-center bg-cover border-3 border-[#b936ee] order-1 self-center animate-profile__animate"
+                style={{
+                    backgroundImage: "url('https://i.ibb.co.com/NYKt6gx/ahmisrafil.jpg')", 
+                    boxShadow: "inset 0 0 0 9px rgba(255, 255, 255, 0.3)",
+                    animation: "profile__animate 8s ease-in-out infinite 1s",
+                    }}>
+
+            </div>
+
+
+
+
         </>
     );
 };

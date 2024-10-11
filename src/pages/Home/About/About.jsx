@@ -70,7 +70,7 @@ const About = () => {
                         className='h-[200px] sm:h-[300px] lg:h-[400px] rounded-full border-2 bg-gradient-to-bl from-[#161d21] via-purple-600 to-pink-400'
                         alt="md_israfil" />
                 </div>
-                <div className='mt-8 lg:mt-0'>
+                <div className='mt-8 lg:mt-0 text-center'>
                     <motion.h3 variants={textVariants} className='text-3xl sm:text-5xl lg:text-6xl font-semibold bg-gradient-to-l from-gray-400 via-pink-600 to-red-500 bg-clip-text text-transparent mb-8 mx-4'>
                         ABOUT ME
                     </motion.h3>

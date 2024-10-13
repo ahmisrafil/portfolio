@@ -13,7 +13,7 @@ const Navbar = () => {
             <NavLink to='/skills'>Skills</NavLink>
         </li>
         <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
-            <NavLink to='/'>Resume</NavLink>
+            <NavLink to='https://drive.usercontent.google.com/uc?id=1_jbo6WpAYGjnDzdrmhIySRwhGqdGdgT0&export=download'>Resume</NavLink>
         </li>
         <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
             <NavLink to='/'>Services</NavLink>

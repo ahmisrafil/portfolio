@@ -6,10 +6,10 @@ import { fadeIn } from '../../../variants';
 const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = (e) => {  
     e.preventDefault();
 
-    emailjs.sendForm('service_cgltyv1', 'template_kgrckm8', form.current, 'Uyj6tbzNku2NJChMI')
+    emailjs.sendForm('service_cgltyv1', 'template_kgrckm8', form.current, 'kOg1esk6AN8hV-Ddv')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 lg:section bg-gradient-to-r from-gray-900 to-black text-white" id="contact">
+    <section className="relative py-16 lg:section mx-4 lg:mx-20 text-white" id="contact">
       <div className="container mx-auto">
 
         <div className="flex flex-col lg:flex-row gap-y-12 lg:gap-x-10">

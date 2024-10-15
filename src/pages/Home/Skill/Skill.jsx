@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../../variants';
 const Skill = () => {
     return (
         <div>
@@ -12,7 +13,12 @@ const Skill = () => {
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10  text-lg mx-4 sm:mx-10 lg:mx-36">
                         {/* Skill 1: HTML 5 */}
-                        <div className="p-4 text-white">
+                        <motion.div
+                        variants={fadeIn('down', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                         className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
                                     <img
@@ -28,10 +34,15 @@ const Skill = () => {
                             <p className="w-full sm:w-80 lg:w-96">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, tenetur.
                             </p>
-                        </div>
+                        </motion.div>
 
                         {/* Skill 2: CSS 3 */}
-                        <div className="p-4 text-white">
+                        <motion.div 
+                        variants={fadeIn('down', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                        className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
                                     <img
@@ -47,10 +58,15 @@ const Skill = () => {
                             <p className="w-full sm:w-80 lg:w-96">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, tenetur.
                             </p>
-                        </div>
+                        </motion.div>
 
                         {/* Skill 3: JavaScript */}
-                        <div className="p-4 text-white">
+                        <motion.div
+                        variants={fadeIn('down', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                         className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
                                     <img
@@ -66,10 +82,15 @@ const Skill = () => {
                             <p className="w-full sm:w-80 lg:w-96">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, tenetur.
                             </p>
-                        </div>
+                        </motion.div>
 
                         {/* Skill 4: React Js */}
-                        <div className="p-4 text-white">
+                        <motion.div
+                        variants={fadeIn('right', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                         className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
                                     <img
@@ -85,10 +106,15 @@ const Skill = () => {
                             <p className="w-full sm:w-80 lg:w-96">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, tenetur.
                             </p>
-                        </div>
+                        </motion.div>
 
                         {/* Skill 5: Node Js */}
-                        <div className="p-4 text-white">
+                        <motion.div
+                        variants={fadeIn('right', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                         className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
                                     <img
@@ -104,10 +130,15 @@ const Skill = () => {
                             <p className="w-full sm:w-80 lg:w-96">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, tenetur.
                             </p>
-                        </div>
+                        </motion.div>
 
                         {/* Skill 6: MongoDB */}
-                        <div className="p-4 text-white">
+                        <motion.div
+                        variants={fadeIn('right', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                         className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
                                     <img
@@ -123,7 +154,7 @@ const Skill = () => {
                             <p className="w-full sm:w-80 lg:w-96">
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, tenetur.
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

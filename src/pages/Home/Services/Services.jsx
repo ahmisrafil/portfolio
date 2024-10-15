@@ -31,6 +31,31 @@ const services = [
   }
 ];
 
+const textVariants = {
+  initial: {
+      x: -500,
+      opacity: 0,
+  },
+  animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+          duration: 1,
+          staggerChildren: 0.1,
+      },
+  },
+  scrollButton: {
+      opacity: 0,
+      y: 10,
+      transition: {
+          duration: 2,
+          repeat: Infinity,
+      },
+  },
+};
+
+
+
 const Services = () => {
   return (
     <div className="section relative py-20" id="services">
@@ -40,10 +65,9 @@ const Services = () => {
       <div className="container mx-auto relative z-10">
         {/* Section Title */}
         <motion.div
-          variants={fadeIn('right', 0.3)}
+          variants={textVariants}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          animate="animate"
           className="text-center mb-10 text-white"
         >
           <h2 className="text-3xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">My Services</h2>
@@ -52,10 +76,9 @@ const Services = () => {
 
         {/* Grid layout for services with Glassmorphism effect */}
         <motion.div
-          variants={fadeIn('left', 0.5)}
+          variants={textVariants}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          animate="animate"
           className="grid grid-cols-1 sm:grid-cols-2 lg:mx-20 gap-10"
         >
           {services.map((service, index) => {

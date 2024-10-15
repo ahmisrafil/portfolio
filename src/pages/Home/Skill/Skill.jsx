@@ -7,9 +7,14 @@ const Skill = () => {
             <div className="w-full">
                 <div className="inner">
                     <div className="headers">
-                        <h1 className="text-3xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">
+                        <motion.h1 
+                        variants={fadeIn('right', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
+                         className="text-3xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">
                             My Skills
-                        </h1>
+                        </motion.h1>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10  text-lg mx-4 sm:mx-10 lg:mx-36">
                         {/* Skill 1: HTML 5 */}
@@ -86,7 +91,7 @@ const Skill = () => {
 
                         {/* Skill 4: React Js */}
                         <motion.div
-                        variants={fadeIn('right', 0.5)}
+                        variants={fadeIn('left', 0.5)}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: false, amount: 0.3 }}
@@ -110,7 +115,7 @@ const Skill = () => {
 
                         {/* Skill 5: Node Js */}
                         <motion.div
-                        variants={fadeIn('right', 0.5)}
+                        variants={fadeIn('left', 0.5)}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: false, amount: 0.3 }}
@@ -134,7 +139,7 @@ const Skill = () => {
 
                         {/* Skill 6: MongoDB */}
                         <motion.div
-                        variants={fadeIn('right', 0.5)}
+                        variants={fadeIn('left', 0.5)}
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: false, amount: 0.3 }}

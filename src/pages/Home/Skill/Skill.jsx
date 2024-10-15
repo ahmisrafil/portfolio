@@ -10,7 +10,7 @@ const Skill = () => {
                             My Skills
                         </h1>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-6 sm:p-10 lg:p-20 text-lg mx-4 sm:mx-10 lg:mx-36">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10  text-lg mx-4 sm:mx-10 lg:mx-36">
                         {/* Skill 1: HTML 5 */}
                         <div className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">

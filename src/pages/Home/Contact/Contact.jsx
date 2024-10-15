@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="relative py-16 lg:section mx-4 lg:mx-20 text-white" id="contact">
+    <section className=" py-16 mx-4 lg:mx-20 text-white" id="contact">
       <div className="container mx-auto">
 
         <div className="flex flex-col lg:flex-row gap-y-12 lg:gap-x-10">

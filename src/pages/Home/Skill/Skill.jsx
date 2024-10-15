@@ -2,29 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../variants';
 const Skill = () => {
-    const textVariants = {
-        initial: {
-            x: -500,
-            opacity: 0,
-        },
-        animate: {
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 1,
-                staggerChildren: 0.1,
-            },
-        },
-        scrollButton: {
-            opacity: 0,
-            y: 10,
-            transition: {
-                duration: 2,
-                repeat: Infinity,
-            },
-        },
-    };
-    
     
     return (
         <div>
@@ -32,19 +9,21 @@ const Skill = () => {
                 <div className="inner">
                     <div className="headers">
                         <motion.h1 
-                        variants={textVariants}
+                        variants={fadeIn('right', 0.5)}
                         initial="hidden"
-                        animate="animate"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                          className="text-3xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">
-                            My Skills
+                            My Skills 
                         </motion.h1>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10  text-lg mx-4 sm:mx-10 lg:mx-36">
                         {/* Skill 1: HTML 5 */}
                         <motion.div
-                        variants={textVariants}
+                        variants={fadeIn('down', 0.5)}
                         initial="hidden"
-                        animate="animate"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                          className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
@@ -65,9 +44,10 @@ const Skill = () => {
 
                         {/* Skill 2: CSS 3 */}
                         <motion.div 
-                        variants={textVariants}
+                        variants={fadeIn('down', 0.5)}
                         initial="hidden"
-                        animate="animate"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                         className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
@@ -88,9 +68,10 @@ const Skill = () => {
 
                         {/* Skill 3: JavaScript */}
                         <motion.div
-                        variants={textVariants}
+                        variants={fadeIn('down', 0.5)}
                         initial="hidden"
-                        animate="animate"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                          className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
@@ -111,9 +92,10 @@ const Skill = () => {
 
                         {/* Skill 4: React Js */}
                         <motion.div
-                        variants={textVariants}
+                        variants={fadeIn('left', 0.5)}
                         initial="hidden"
-                        animate="animate"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                          className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
@@ -134,9 +116,10 @@ const Skill = () => {
 
                         {/* Skill 5: Node Js */}
                         <motion.div
-                       variants={textVariants}
-                       initial="hidden"
-                       animate="animate"
+                        variants={fadeIn('left', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                          className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">
@@ -157,9 +140,10 @@ const Skill = () => {
 
                         {/* Skill 6: MongoDB */}
                         <motion.div
-                       variants={textVariants}
-                       initial="hidden"
-                       animate="animate"
+                        variants={fadeIn('left', 0.5)}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: false, amount: 0.3 }}
                          className="p-4 text-white">
                             <div className="flex flex-col items-center p-2 mb-2 relative">
                                 <div className="img">

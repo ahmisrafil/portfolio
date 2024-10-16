@@ -7,7 +7,7 @@ const Skill = () => {
         <div>
             <div className="w-full">
                 <div className="inner">
-                    <div className="headers">
+                    <div>
                         <motion.h1 
                         variants={fadeIn('right', 0.5)}
                         initial="hidden"

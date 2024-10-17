@@ -13,7 +13,7 @@ const Skill = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{ once: false, amount: 0.3 }}
-                         className="text-3xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">
+                         className="text-4xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">
                             My Skills 
                         </motion.h1>
                     </div>

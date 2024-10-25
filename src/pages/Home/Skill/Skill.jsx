@@ -11,7 +11,7 @@ const Skill = () => {
                         <motion.h1 
                         variants={fadeIn('right', 0.5)}
                         initial="hidden"
-                        whileInView="show"
+                        whileInView="show" 
                         viewport={{ once: false, amount: 0.3 }}
                          className="text-4xl text-center sm:text-5xl lg:text-6xl font-bold bg-gradient-to-l from-cyan-800 via-pink-200 to-red-800 bg-clip-text text-transparent mb-8 mx-4">
                             My Skills 

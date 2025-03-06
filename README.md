@@ -1,8 +1,21 @@
-# React + Vite
+# Portfolio Using MERN Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website, [ahmisrafil.netlify.app](https://ahmisrafil.netlify.app). The site showcases my projects, skills, and experiences in web development. Built using modern web technologies, it serves as a platform to highlight my work and share my contact information.
 
-Currently, two official plugins are available:
+### Key Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive Design: Ensures optimal viewing across various devices and screen sizes.
+- Project Showcase: Detailed descriptions and links to my notable projects.
+- About Me: An overview of my background, skills, and interests.
+- Contact Information: Easy access to my email and social media profiles for networking opportunities.
+  
+### Technologies Used:
+
+- HTML5
+- CSS3
+- JavaScript
+- React.js
+- Tailwind CSS
+### Deployment: 
+The website is deployed using Netlify, providing continuous deployment and hosting services.
+

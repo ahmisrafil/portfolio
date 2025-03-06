@@ -43,7 +43,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="flex  px-1">
-                    {navLinks}
+                    {navLinks} 
                 </ul>
             </div>
         </div>

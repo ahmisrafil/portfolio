@@ -72,7 +72,8 @@ const Banner = () => {
                         <motion.h3 variants={textVariants} className='text-lg text-gray-100 sm:text-xl font-bold ml-2 sm:ml-4'>Hey I'm,</motion.h3>
                         <motion.h3
                             variants={textVariants}
-                            className='text-4xl sm:text-6xl lg:text-9xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>
+                            className='text-4xl sm:text-6xl lg:text-9xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'
+                            >
                             AHM ISRAFIL
                         </motion.h3>
                     </div>

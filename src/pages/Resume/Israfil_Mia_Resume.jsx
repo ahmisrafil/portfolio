@@ -140,7 +140,7 @@ export default function Resume() {
     <div
       style={{
         minHeight: "100vh",
-        background: "#0b0f14",
+        background: "linear-gradient(135deg, #0000cc 0%, #991e63 100%)",
         color: "#e2e8f0",
         fontFamily: "'Lora', Georgia, serif",
         padding: "2rem 1rem 4rem",
@@ -538,7 +538,7 @@ export default function Resume() {
             textAlign: "center",
             fontFamily: "'DM Mono', monospace",
             fontSize: "0.7rem",
-            color: "#3a5a52",
+            color: "#aaaaaa",
             letterSpacing: "0.1em",
           }}
         >

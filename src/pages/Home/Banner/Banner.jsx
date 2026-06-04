@@ -49,7 +49,7 @@ const Banner = () => {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: [' TEACHER',' WEB DEVELOPER', 'FRONTEND DEVELOPER', 'UI/UX DESIGNER', 'REACT DEVELOPER'],
+            strings: [' LECTURER',' WEB DEVELOPER', 'FRONTEND DEVELOPER', 'UI/UX DESIGNER', 'REACT DEVELOPER'],
             typeSpeed: 150,
             loop: true,
             // fadeOut: true,

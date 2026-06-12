@@ -4,7 +4,7 @@
 
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { ExternalLink, Github, Clock, Smartphone, Gauge, ListChecks, Search, X, ChevronLeft, ChevronRight, Layers } from 'lucide-react';
+import { ExternalLink, GitHub, Clock, Smartphone, Gauge, ListChecks, Search, X, ChevronLeft, ChevronRight, Layers } from 'lucide-react';
 
 /* ======================= DATA ======================= */
 
@@ -620,7 +620,7 @@ function FeaturedProjectCard({ project, reverse = false, onOpenDetails }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-200 transition-colors duration-200 hover:border-white/30 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
             >
-              <Github className="h-4 w-4" aria-hidden="true" />
+              <GitHub className="h-4 w-4" aria-hidden="true" />
               Source Code
             </a>
             <button
@@ -640,7 +640,7 @@ function FeaturedProjectCard({ project, reverse = false, onOpenDetails }) {
 
 /* ======================= GalleryCard ======================= */
 
-const cardVariants = {
+const galleryCardVariants = {
   hidden: { opacity: 0, y: 24, scale: 0.98 },
   visible: { opacity: 1, y: 0, scale: 1 },
   exit: { opacity: 0, y: -16, scale: 0.98 },
@@ -652,7 +652,7 @@ function GalleryCard({ project, onOpenDetails }) {
   return (
     <motion.article
       layout
-      variants={cardVariants}
+      variants={galleryCardVariants}
       initial="hidden"
       animate="visible"
       exit="exit"
@@ -723,7 +723,7 @@ function GalleryCard({ project, onOpenDetails }) {
             aria-label={`Open source code for ${title}`}
             className="rounded-lg border border-white/10 p-2 text-slate-300 transition-colors hover:border-cyan-300/40 hover:text-cyan-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
           >
-            <Github className="h-4 w-4" aria-hidden="true" />
+            <GitHub className="h-4 w-4" aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -1068,7 +1068,7 @@ function ProjectModal({ project, onClose }) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-200 transition-colors hover:border-white/30 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
               >
-                <Github className="h-4 w-4" aria-hidden="true" />
+                <GitHub className="h-4 w-4" aria-hidden="true" />
                 Source Code
               </a>
             </div>

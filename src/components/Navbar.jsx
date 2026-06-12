@@ -21,7 +21,7 @@ const Navbar = () => {
         </li>
         
         <li className="lg:text-white lg:text-xl lg:font-sans  lg:mx-2">
-            <NavLink to='/'>Projects</NavLink>
+            <NavLink to='/Projects'>Projects</NavLink>
         </li>
 
 

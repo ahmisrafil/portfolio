@@ -6,7 +6,8 @@ import Home from "./pages/Home/Home";
 import About from "./pages/Home/About/About";
 import Skill from "./pages/Home/Skill/Skill";
 import Resume from "./pages/Resume/Israfil_Mia_Resume";
-  
+import Projects from "./pages/Projects/Projects";
+
   export const router = createBrowserRouter([
     {
       path: "/",
@@ -28,6 +29,10 @@ import Resume from "./pages/Resume/Israfil_Mia_Resume";
         {
             path:"resume" ,
             element: <Resume></Resume>
+        },
+        {
+            path: "Projects" ,
+            element: <Projects></Projects>
         },
         // {
         //     path: ,

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react';
-import israfil from '../../../assets/ahmisrafilcopy.jpg'
+import israfil from '../../../assets/ahmisrafilcopy.png'
 
 const textVariants = {
     initial: {

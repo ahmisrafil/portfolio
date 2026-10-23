@@ -103,7 +103,7 @@ const Banner = () => {
                     
                     <div className="h-[300px] sm:h-[400px] lg:h-[500px] w-[300px] sm:w-[350px] lg:w-[450px] bg-no-repeat bg-center bg-cover border-3 border-[#b936ee] order-1 self-center animate-profile__animate"
                         style={{
-                            backgroundImage: "url('https://i.ibb.co.com/NYKt6gx/ahmisrafil.jpg')",
+                            backgroundImage: "url('https://i.ibb.co.com/TqcGf14B/ahm-israfil.jpg')",
                             boxShadow: "inset 0 0 0 9px rgba(255, 255, 255, 0.3)",
                             border: "2px red",
                             animation: "profile__animate 8s ease-in-out infinite 1s",

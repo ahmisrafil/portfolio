@@ -116,7 +116,7 @@ export default function Resume() {
       <div className="resume-shell">
         <div className="topline">
           <a className="brand-mark" href="/" aria-label="Return to portfolio home">
-            <span className="brand-symbol">IM</span>
+            <span className="brand-symbol">AHMI.</span>
             <span className="brand-label">PERSONAL PORTFOLIO</span>
           </a>
           <span className="availability"><span /> OPEN TO OPPORTUNITIES</span>
@@ -159,7 +159,7 @@ export default function Resume() {
             <div className="hero-glow" />
             <div className="monogram-card">
               <span className="monogram-kicker">COMPUTER SCIENCE</span>
-              <span className="monogram">IM<span>.</span></span>
+              <span className="monogram">AHM<span>.</span></span>
               <span className="monogram-caption">ACADEMIC · TECHNOLOGY · RESEARCH</span>
             </div>
             <span className="floating-chip chip--top">Teaching</span>

@@ -49,7 +49,7 @@ const Experience = () => {
       desc: 'Mymensingh',
     },
     {
-      icon: workIcon,
+      icon: schoolIcon,
       date: '2012-2014',
       title: 'Secondary School Certificate(SSC)',
       subtitle: 'Jamalpur Zilla School',
@@ -57,24 +57,10 @@ const Experience = () => {
     },
     {
       icon: schoolIcon,
-      date: 'April 2013',
-      title: 'Content Marketing for Web, Mobile and Social Media',
-      subtitle: 'Online Course',
-      desc: 'Strategy, Social Media',
-    },
-    {
-      icon: schoolIcon,
-      date: 'November 2012',
-      title: 'Agile Development Scrum Master',
-      subtitle: 'Certification',
-      desc: 'Creative Direction, User Experience, Visual Design',
-    },
-    {
-      icon: schoolIcon,
-      date: '2002 - 2006',
-      title: 'Bachelor of Science in Interactive Digital Media Visual Imaging',
-      subtitle: 'Bachelor Degree',
-      desc: 'Creative Direction, Visual Design',
+      date: '2003-2012',
+      title: 'Junior School Certificate(JSC)',
+      subtitle: 'Zeal Bangla Sugar Mills High School',
+      desc: 'Dewanganj',
     },
     { icon: starIcon },
   ];
@@ -82,12 +68,7 @@ const Experience = () => {
 
     return (
       <div className="App">
-      <h3>
-        Create a vertical timeline component in React -{' '}
-        <a href="https://www.cluemediator.com/" target="_blank">
-          Clue Mediator
-        </a>
-      </h3>
+      
       <VerticalTimeline>
         {timeline.map((t, i) => {
           const contentStyle =
@@ -96,7 +77,7 @@ const Experience = () => {
               : undefined;
           const arrowStyle =
             i === 0
-              ? { borderRight: '7px solid  rgb(33, 150, 243)' }
+              ? { borderRight: '10px solid  rgb(33, 150, 243)' }
               : undefined;
 
           return (
@@ -123,6 +104,8 @@ const Experience = () => {
           );
         })}
       </VerticalTimeline>
+      <br />
+      <br />
     </div>
     );
   }

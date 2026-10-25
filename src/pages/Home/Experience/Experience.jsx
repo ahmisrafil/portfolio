@@ -1,115 +1,143 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-
 import "react-vertical-timeline-component/style.min.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBriefcase,
   faSchool,
   faStar,
-} from '@fortawesome/free-solid-svg-icons';
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
+import "./Experience.css";
 
-const workIcon = {
-  icon: <FontAwesomeIcon icon={faBriefcase} />,
-  iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
-};
-const schoolIcon = {
-  icon: <FontAwesomeIcon icon={faSchool} />,
-  iconStyle: { background: 'rgb(233, 30, 99)', color: '#fff' },
-};
-const starIcon = {
-  icon: <FontAwesomeIcon icon={faStar} />,
-  iconStyle: { background: 'rgb(16, 204, 82)', color: '#fff' },
+const timelineItems = [
+  {
+    type: "work",
+    date: "Sep 2024 – Present",
+    title: "Lecturer (ICT)",
+    subtitle: "Professor Shahjahan Ali School & College",
+    location: "Mouchak, Gazipur",
+    description:
+      "Teaching ICT concepts and helping students build a strong foundation in computing and digital technologies.",
+    tags: ["Teaching", "ICT", "Student Mentoring"],
+  },
+  {
+    type: "education",
+    date: "2019 – 2022",
+    title: "Bachelor of Science in Computer Science and Engineering",
+    subtitle: "Sheikh Fazilatunnesa Mujib University",
+    location: "Jamalpur",
+    description: "Undergraduate degree in Computer Science and Engineering.",
+    tags: ["Computer Science", "Engineering"],
+  },
+  {
+    type: "education",
+    date: "2014 – 2016",
+    title: "Higher Secondary Certificate (HSC)",
+    subtitle: "Royal Media College",
+    location: "Mymensingh",
+    tags: ["Higher Secondary"],
+  },
+  {
+    type: "education",
+    date: "2012 – 2014",
+    title: "Secondary School Certificate (SSC)",
+    subtitle: "Jamalpur Zilla School",
+    location: "Jamalpur",
+    tags: ["Secondary Education"],
+  },
+  {
+    type: "education",
+    date: "2003 – 2012",
+    title: "Junior School Certificate (JSC)",
+    subtitle: "Zeal Bangla Sugar Mills High School",
+    location: "Dewanganj",
+    tags: ["School Education"],
+  },
+];
+
+const iconFor = (type) => {
+  if (type === "work") return <FontAwesomeIcon icon={faBriefcase} />;
+  return <FontAwesomeIcon icon={faSchool} />;
 };
 
 const Experience = () => {
-  const timeline = [
-    {
-      icon: workIcon,
-      date: 'Sep,2024 - present',
-      title: 'Lecturer(ICT)',
-      subtitle: 'Professor Shahjahan Ali School & College',
-      desc: 'Mouchak, Gazipur',
-    },
-    {
-      icon: schoolIcon,
-      date: '2019 - 2022',
-      title: 'Bachelor of Science in Computer Science and Engineering',
-      subtitle: 'Sheikh Fazilatunnesa Mujib University',
-      desc: 'Jamalpur',
-    },
-    {
-      icon: schoolIcon,
-      date: '2014 - 2016',
-      title: 'Higher Secondary School Certificate (HSC)',
-      subtitle: 'Royal Media College',
-      desc: 'Mymensingh',
-    },
-    {
-      icon: schoolIcon,
-      date: '2012-2014',
-      title: 'Secondary School Certificate(SSC)',
-      subtitle: 'Jamalpur Zilla School',
-      desc: 'Jamalpur',
-    },
-    {
-      icon: schoolIcon,
-      date: '2003-2012',
-      title: 'Junior School Certificate(JSC)',
-      subtitle: 'Zeal Bangla Sugar Mills High School',
-      desc: 'Dewanganj',
-    },
-    { icon: starIcon },
-  ];
+  return (
+    <section className="experience-section" id="experience">
+      <div className="experience-heading">
+        <span className="experience-eyebrow">MY JOURNEY</span>
+        <h2>
+          Experience <span>&amp; Education</span>
+        </h2>
+        <p>
+          A timeline of my professional experience and academic background.
+        </p>
+      </div>
 
+      <VerticalTimeline className="experience-timeline">
+        {timelineItems.map((item, index) => (
+          <VerticalTimelineElement
+            key={`${item.date}-${item.title}`}
+            className="experience-timeline-element"
+            date={item.date}
+            dateClassName="experience-date"
+            icon={iconFor(item.type)}
+            iconClassName={`experience-icon experience-icon--${item.type}`}
+            contentStyle={{}}
+            contentArrowStyle={{}}
+          >
+            <article className="experience-card">
+              <div className="experience-card-glow" aria-hidden="true" />
+              <div className="experience-card-topline">
+                <span className={`experience-type experience-type--${item.type}`}>
+                  {item.type === "work" ? "PROFESSIONAL EXPERIENCE" : "EDUCATION"}
+                </span>
+                <span className="experience-card-number">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </div>
 
-    return (
-      <div className="App">
-      
-      <VerticalTimeline>
-        {timeline.map((t, i) => {
-          const contentStyle =
-            i === 0
-              ? { background: 'rgb(33, 150, 243)', color: '#fff' }
-              : undefined;
-          const arrowStyle =
-            i === 0
-              ? { borderRight: '10px solid  rgb(33, 150, 243)' }
-              : undefined;
+              <h3 className="vertical-timeline-element-title experience-card-title">
+                {item.title}
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle experience-card-subtitle">
+                {item.subtitle}
+              </h4>
 
-          return (
-            <VerticalTimelineElement
-              key={i}
-              className="vertical-timeline-element--work"
-              contentStyle={contentStyle}
-              contentArrowStyle={arrowStyle}
-              date={t.date}
-              {...t.icon}
-            >
-              {t.title ? (
-                <React.Fragment>
-                  <h3 className="vertical-timeline-element-title">{t.title}</h3>
-                  {t.subtitle && (
-                    <h4 className="vertical-timeline-element-subtitle">
-                      {t.subtitle}
-                    </h4>
-                  )}
-                  {t.desc && <p>{t.desc}</p>}
-                </React.Fragment>
-              ) : undefined}
-            </VerticalTimelineElement>
-          );
-        })}
+              {item.location && (
+                <p className="experience-location">
+                  <FontAwesomeIcon icon={faLocationDot} /> {item.location}
+                </p>
+              )}
+              {item.description && (
+                <p className="experience-description">{item.description}</p>
+              )}
+
+              {item.tags?.length > 0 && (
+                <div className="experience-tags">
+                  {item.tags.map((tag) => (
+                    <span key={tag} className="experience-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </article>
+          </VerticalTimelineElement>
+        ))}
+
+        <VerticalTimelineElement
+          icon={<FontAwesomeIcon icon={faStar} />}
+          iconClassName="experience-icon experience-icon--end"
+          contentStyle={{ display: "none" }}
+          contentArrowStyle={{ display: "none" }}
+        />
       </VerticalTimeline>
-      <br />
-      <br />
-    </div>
-    );
-  }
-
-
+    </section>
+  );
+};
 
 export default Experience;

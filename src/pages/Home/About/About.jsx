@@ -107,14 +107,14 @@ const textVariants = {
 const details = [
   { label: "Full name", value: "Md. Israfil Mia", icon: FaCode },
   { label: "Date of birth", value: "February 12, 1998", icon: FaCalendarAlt },
-  { label: "Location", value: "Khilkhet, Dhaka", icon: FaMapMarkerAlt },
+  { label: "Location", value: "Mouchak, Kaliyakoir, Gazipur", icon: FaMapMarkerAlt },
   { label: "Email", value: "ahmisrafilcse@gmail.com", icon: FaEnvelope, href: "mailto:ahmisrafilcse@gmail.com" },
   { label: "Phone", value: "+88 01770099768", icon: FaPhoneAlt, href: "tel:+8801770099768" },
 ];
 
 const About = () => {
   return (
-    <section id="about" className="relative isolate overflow-hidden bg-[#080b14] px-4 py-20 text-white sm:px-6 lg:px-8 lg:py-28">
+    <section id="about" className="relative isolate overflow-hidden  px-4 py-20 text-white sm:px-6 lg:px-8 lg:py-28">
       {/* Ambient background accents */}
       <div aria-hidden="true" className="pointer-events-none absolute -left-32 top-16 h-72 w-72 rounded-full bg-violet-600/20 blur-[100px]" />
       <div aria-hidden="true" className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-cyan-500/15 blur-[110px]" />

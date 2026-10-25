@@ -39,7 +39,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div>
+                    <NavLink to='/'>
                     <img src="https://i.ibb.co.com/sPvjRwg/Israfil.png" alt="" className='h-10' />
+                    </NavLink>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">

@@ -4,6 +4,7 @@ import {
   AnimatePresence,
   motion,
 } from "framer-motion";
+import petcharm from "../../assets/PetCharm-Home.png";
 import {
   FaExternalLinkAlt,
   FaLayerGroup,
@@ -25,7 +26,7 @@ const projects = [
     category: "Websites",
     description:
       "A school management website designed to present school information and provide visitors with a convenient online experience.",
-    image: "/projects/school-management.png",
+    image: { src: petcharm, alt: "School Management Website" },
     liveLink:
       "https://6669df80efa1090b0f8e19ce--boisterous-lolly-9a99c7.netlify.app/",
     githubLink: "",
